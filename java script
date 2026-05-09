@@ -1,0 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("HA Media Solutions: Systems Active");
+
+    // Photo Parallax Effect
+    const frame = document.querySelector('.frame');
+    if (frame) {
+        document.addEventListener('mousemove', (e) => {
+            let x = (window.innerWidth / 2 - e.pageX) / 40;
+            let y = (window.innerHeight / 2 - e.pageY) / 40;
+            frame.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+        });
+    }
+
+    // Active Link Highlight
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.style.color = '#C5A059';
+            link.style.borderBottom = '2px solid #C5A059';
+        }
+    });
+});

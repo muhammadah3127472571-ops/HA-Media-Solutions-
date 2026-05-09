@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roofing Repair Pay Per Call - HA Media Solution</title>
+  <meta name="description" content="Roofing Repair Pay Per Call Campaigns. USA temp numbers. High quality leads. Google Ads + Facebook Ads." />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="brand.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
+
+    .navbar {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .logo { font-size: 1.8rem; font-weight: 700; color: #ffd700; text-decoration: none; }
+    .nav-links { display: flex; list-style: none; gap: 2rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: all 0.3s; padding: 0.5rem 1rem; border-radius: 25px; }
+    .nav-links a:hover { background: rgba(255,215,0,0.2); color: #ffd700; }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-top: 90px;
+      background: linear-gradient(rgba(30,60,114,0.95), rgba(42,82,152,0.95)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700"><rect fill="%231e3c72" width="1200" height="700"/><path fill="%23ffd700" opacity="0.35" d="M150 360l450-300 450 300v300H150V360z"/><path fill="%23ffd700" opacity="0.6" d="M250 410l350-250 350 250v250H250V410z"/></svg>');
+    }
+
+    .hero-content h1 { font-size: 4rem; font-weight: 700; margin-bottom: 1rem; animation: fadeInUp 1s ease; }
+    .hero-content .highlight { color: #ffd700; font-weight: 800; }
+    .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; max-width: 650px; animation: fadeInUp 1s ease 0.2s both; }
+
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease 0.4s both; }
+    .btn-primary, .btn-secondary { padding: 18px 40px; font-size: 1.1rem; font-weight: 600; border-radius: 50px; text-decoration: none; transition: all 0.3s; display: inline-block; }
+    .btn-primary { background: linear-gradient(45deg, #ffd700, #ffed4e); color: #1e3c72; box-shadow: 0 10px 30px rgba(255,215,0,0.4); }
+    .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255,215,0,0.6); }
+    .btn-secondary { background: transparent; color: white; border: 2px solid #ffd700; }
+    .btn-secondary:hover { background: #ffd700; color: #1e3c72; }
+
+    .services { padding: 100px 0; background: #f8f9fa; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-title { text-align: center; font-size: 3rem; font-weight: 700; margin-bottom: 4rem; background: linear-gradient(45deg, #1e3c72, #2a5298); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .service-card { background: white; padding: 2.2rem; border-radius: 20px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: all 0.3s; height: 100%; }
+    .service-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #1e3c72; }
+    .service-card p { color: #666; margin-bottom: 0; }
+
+    .thumb-wrap { margin-bottom: 1rem; }
+    .thumb { width: 100%; max-width: 360px; border-radius: 16px; display: block; margin: 0 auto 1rem; box-shadow: 0 15px 40px rgba(0,0,0,0.12); }
+
+    .cta-section { padding: 100px 0; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; text-align: center; }
+    .cta-section h2 { font-size: 3rem; margin-bottom: 1rem; }
+
+    .footer { background: #1a1a1a; color: white; padding: 3rem 0 1rem; text-align: center; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+    .footer h3 { color: #ffd700; margin-bottom: 1rem; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+    .social-links a { color: white; font-size: 1.5rem; transition: color 0.3s; }
+    .social-links a:hover { color: #ffd700; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes floaty { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-8px);} }
+
+    .feature-pop { animation: fadeInUp 900ms ease both; }
+    .pulse-btn i { animation: floaty 2s ease-in-out infinite; }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.5rem; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .nav-links { display: none; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-bullhorn"></i> HA Media Solution</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plumbing.html">Plumbing</a></li>
+        <li><a href="electrician.html">Electrician</a></li>
+        <li><a href="hvac.html">HVAC</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1><span class="highlight">Roofing</span> Repair Pay Per Call</h1>
+      <p>Get <strong>Emergency Roof Leak Leads</strong> | USA temp numbers | <strong>$55-170 per call</strong> | High intent</p>
+      <div class="cta-buttons">
+        <a href="tel:+923127439135" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/923127439135" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="contact.html" class="btn-secondary"><i class="fas fa-file-alt"></i> Get Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Roofing Repair Campaign Details</h2>
+      <div class="services-grid">
+<div class="service-card">
+          <div class="thumb-wrap"><img class="thumb" alt="Roofing payout" src="Roof-Replacement-Timeline-What-to-Expect.jpg" /></div>
+          <h3>Payout: $55-170 / Call</h3>
+          <p>Qualified roof repair requests only (leaks, missing shingles, storm damage)</p>
+        </div>
+<div class="service-card">
+          <div class="thumb-wrap"><img class="thumb" alt="USA temp numbers" src="ahmad.jpg.png" /></div>
+          <h3>USA Temp Numbers</h3>
+          <p>Premium temp numbers provided</p>
+        </div>
+<div class="service-card">
+          <div class="thumb-wrap"><img class="thumb" alt="Fast estimate leads" src="Roofing-101-A-Comprehensive-Guide-To-Roof-Construction-And-Repairs-1568x882.jpg" /></div>
+          <h3>Fast Estimate Leads</h3>
+          <p>Urgent roof issues (water stains, sagging roof, flashing problems)</p>
+        </div>
+<div class="service-card">
+          <div class="thumb-wrap"><img class="thumb" alt="Call duration" src="Roofing-101-A-Comprehensive-Guide-To-Roof-Construction-And-Repairs-1568x882 (1).jpg" /></div>
+          <h3>Call Duration</h3>
+          <p>Minimum 90 seconds (roof type + problem verification)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Start Your Roofing Campaign</h2>
+      <p style="font-size:1.2rem; margin-top: 0.5rem;">WhatsApp par USA temp number lein</p>
+      <div class="cta-buttons" style="margin-top: 2rem;">
+        <a class="btn-primary" href="https://wa.me/923127439135" target="_blank"><i class="fab fa-whatsapp"></i> Get USA Temp Number</a>
+        <a class="btn-secondary" href="tel:+923127439135"><i class="fas fa-phone"></i> Call</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3>HA Media Solution</h3>
+          <p>#1 Pay Per Call Agency for Home Services</p>
+          <p>Google Ads | Facebook Ads | SEO Expert</p>
+        </div>
+        <div>
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-phone"></i> +92 312 7439135</p>
+          <p><i class="fas fa-envelope"></i> muhammadah3127472571@gmail.com</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p>Plumbing | Electrician | HVAC</p>
+          <p>Locksmith | Roofing Repair</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://wa.me/923127439135" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:muhammadah3127472571@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #444;">© 2024 HA Media Solution. Founded by <strong>Muhammad Ahmad</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="brand-anim-logo" aria-hidden="true"><div class="inner"><i class="fas fa-bullhorn"></i></div></div>
+  <div class="brand-watermark" aria-hidden="true"><span class="logoText">HA MEDIA SOLUTION</span></div>
+</body>
+</html>
+
+

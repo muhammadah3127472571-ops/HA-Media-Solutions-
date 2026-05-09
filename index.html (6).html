@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrician Pay Per Call - HA Media Solution</title>
+  <meta name="description" content="Electrician Pay Per Call Campaigns. USA temp numbers. High quality leads. Google Ads + Facebook Ads." />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
+
+    .navbar {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .logo { font-size: 1.8rem; font-weight: 700; color: #ffd700; text-decoration: none; }
+    .nav-links { display: flex; list-style: none; gap: 2rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: all 0.3s; padding: 0.5rem 1rem; border-radius: 25px; }
+    .nav-links a:hover { background: rgba(255,215,0,0.2); color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: #0a192f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 90px;
+      color: white;
+    }
+
+    .hero-three-col {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      padding: 30px 40px;
+    }
+
+    .hero-side {
+      flex: 0 0 auto;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-side-img {
+      width: 400px;
+      height: 550px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .hero-side-left .hero-side-img { border: 5px solid #ffffff; }
+    .hero-side-right .hero-side-img {
+      border: 5px solid #ffd700;
+      box-shadow: 0 0 18px rgba(255,215,0,0.65), 0 0 45px rgba(255,215,0,0.25);
+    }
+
+    .hero-center { flex: 0 0 680px; max-width: 680px; text-align: center; padding: 0 10px; }
+    .hero-center h1 { font-size: 56px; line-height: 1.05; margin-bottom: 18px; font-weight: 800; }
+    .hero-yellow { color: #ffd700; }
+    .hero-white { color: #ffffff; }
+    .hero-subtext { font-size: 18px; color: #e5e7eb; margin-bottom: 28px; }
+
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary, .btn-secondary {
+      padding: 18px 40px; font-size: 1.1rem; font-weight: 600; border-radius: 50px;
+      text-decoration: none; transition: all 0.3s; display: inline-block;
+    }
+    .btn-primary { background: linear-gradient(45deg, #ffd700, #ffed4e); color: #1e3c72; box-shadow: 0 10px 30px rgba(255,215,0,0.4); }
+    .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255,215,0,0.6); }
+    .btn-secondary { background: transparent; color: #ffffff; border: 2px solid #ffd700; }
+    .btn-secondary:hover { background: #ffd700; color: #1e3c72; }
+
+    /* Services/Campaign Section */
+    .services { padding: 100px 0; background: #f8f9fa; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-title { text-align: center; font-size: 3rem; font-weight: 700; margin-bottom: 4rem; color: #1e3c72; }
+
+    .services-grid { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .service-card { flex: 1; min-width: 300px; background: #ffffff; padding: 1.5rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+    
+    .thumb-box {
+      width: 100%;
+      height: 220px;
+      padding: 2px;
+      border-radius: 16px;
+      border: 2px solid #ffd700;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    .thumb { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
+    .service-card h3 { font-size: 1.5rem; color: #1e3c72; margin-bottom: 10px; }
+    .service-card p { color: #6b7280; font-size: 0.95rem; }
+
+    /* Footer & CTA */
+    .cta-section { padding: 80px 0; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; text-align: center; }
+    .footer { background: #1a1a1a; color: white; padding: 3rem 0 1rem; text-align: center; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+    .social-links a { color: white; font-size: 1.5rem; }
+
+    @media (max-width: 900px) {
+      .hero-three-col { flex-direction: column; text-align: center; }
+      .hero-side { width: 100%; }
+      .hero-side-img { width: 300px; height: 400px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-bullhorn"></i> HA Media Solution</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="electrician.html">Electrician</a></li>
+        <li><a href="hvac.html">HVAC</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-three-col">
+      <div class="hero-side hero-side-left">
+        <img class="hero-side-img" src="electrician/elec1.jpg" alt="Electrician Work" />
+      </div>
+
+      <div class="hero-center">
+        <h1><span class="hero-yellow">Electrician</span> <span class="hero-white">Pay Per Call</span></h1>
+        <div class="hero-subtext">Get <strong>Professional Electrical Leads</strong> | USA temp numbers | <strong>$40-120 per call</strong> | High conversion</div>
+
+        <div class="cta-buttons">
+          <a href="tel:+923127439135" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+          <a href="https://wa.me/923127439135" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="contact.html" class="btn-secondary"><i class="fas fa-file-alt"></i> Get Quote</a>
+        </div>
+      </div>
+
+      <div class="hero-side hero-side-right">
+        <img class="hero-side-img" src="electrician/elec2.jpg" alt="Electrical Service" />
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Electrician Campaign Details</h2>
+      <div class="services-grid">
+        
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="pay out.jpeg" alt="Payout Chart" />
+          </div>
+          <h3>Payout: $40-120 / Call</h3>
+          <p>Qualified calls only (Panel repair, wiring, lighting, emergency electrical)</p>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="temp-usa-number-receive-sms-logo.avif" alt="USA Numbers" />
+          </div>
+          <h3>USA Temp Numbers</h3>
+          <p>Premium temp numbers provided for marketing</p>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="time duration.jpg" alt="Call Duration" />
+          </div>
+          <h3>Call Duration</h3>
+          <p>Minimum 90 seconds (Qualified jobs)</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Start Your Electrician Campaign</h2>
+      <p style="margin-top:10px;">Founded by <strong>Muhammad Ahmad</strong> - Expert in Lead Gen</p>
+      <div class="cta-buttons" style="margin-top: 30px;">
+        <a class="btn-primary" href="https://wa.me/923127439135" target="_blank"><i class="fab fa-whatsapp"></i> Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3>HA Media Solution</h3>
+          <p>USA Pay Per Call Specialists</p>
+        </div>
+        <div>
+          <h3>Contact Info</h3>
+          <p>+92 312 7439135</p>
+          <p>muhammadah3127472571@gmail.com</p>
+        </div>
+      </div>
+      <p style="margin-top: 2rem; border-top: 1px solid #444; padding-top: 20px;">© 2026 HA Media Solution. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

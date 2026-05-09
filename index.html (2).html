@@ -1,0 +1,384 @@
+ aa<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HVAC Pay Per Call - HA Media Solution</title>
+  <meta name="description" content="HVAC Pay Per Call Campaigns. USA temp numbers. High quality leads. Google Ads + Facebook Ads." />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="brand.css">
+
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
+
+    .navbar {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .logo { font-size: 1.8rem; font-weight: 700; color: #ffd700; text-decoration: none; }
+    .nav-links { display: flex; list-style: none; gap: 2rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: all 0.3s; padding: 0.5rem 1rem; border-radius: 25px; }
+    .nav-links a:hover { background: rgba(255,215,0,0.2); color: #ffd700; }
+
+    /* HVAC Hero (3-col) */
+    .hero {
+      min-height: 100vh;
+      background: #0a192f; /* solid dark navy */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 90px;
+      color: white;
+    }
+
+    .hero-three-col {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      padding: 30px 40px;
+    }
+
+    .hero-side {
+      flex: 0 0 auto;
+      width: 400px; /* keep images fixed, so they don't touch the center */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-side-img {
+      width: 400px;
+      height: 550px;
+      object-fit: contain;
+      background: transparent;
+      border-radius: 16px;
+      display: block;
+    }
+
+
+    .hero-side-left .hero-side-img {
+      border: 5px solid #ffffff;
+    }
+
+    .hero-side-right .hero-side-img {
+      border: 5px solid #ffd700;
+      box-shadow: 0 0 18px rgba(255,215,0,0.65), 0 0 45px rgba(255,215,0,0.25);
+    }
+
+    .hero-center {
+      flex: 0 0 680px;
+      max-width: 680px;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .hero-center h1 {
+      font-size: 56px;
+      line-height: 1.05;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .hero-yellow { color: #ffd700; }
+    .hero-white { color: #ffffff; }
+
+    .hero-subtext {
+      font-size: 18px;
+      color: #e5e7eb;
+      margin-bottom: 28px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary, .btn-secondary {
+      padding: 18px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #ffd700, #ffed4e);
+      color: #1e3c72;
+      box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(255,215,0,0.6);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffd700;
+    }
+
+    .btn-secondary:hover {
+      background: #ffd700;
+      color: #1e3c72;
+    }
+
+    @media (max-width: 1200px) {
+      .hero-three-col { gap: 30px; padding: 20px 20px; }
+      .hero-side, .hero-side-img { width: 330px; }
+      .hero-side-img { height: 480px; }
+      .hero-center { flex: 0 0 560px; max-width: 560px; }
+    }
+
+    @media (max-width: 900px) {
+      .hero-three-col { flex-direction: column; gap: 20px; }
+      .hero-side, .hero-side-img { width: 280px; }
+      .hero-side-img { height: 380px; }
+      .hero-center { flex: 0 0 auto; max-width: 680px; }
+    }
+
+
+
+    .services { padding: 100px 0; background: #f8f9fa; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-title { text-align: center; font-size: 3rem; font-weight: 700; margin-bottom: 4rem; background: linear-gradient(45deg, #1e3c72, #2a5298); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    .services-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: stretch;
+      flex-wrap: nowrap;
+    }
+
+    .service-card {
+      flex: 1 1 0;
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-top: 12px;
+      margin-bottom: 10px;
+      color: #1e3c72;
+    }
+
+    .service-card p {
+      color: #6b7280;
+      font-size: 0.98rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+
+    /* Campaign Cards Image Frame */
+    .thumb-box{
+      width: 100%;
+      height: 220px;
+      padding: 2px;
+      border-radius: 16px;
+      box-sizing: border-box;
+      border: 2px solid rgba(197,160,89,0.65);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .thumb{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      background: transparent;
+    }
+
+    /* Payout card image: ensure no gaps */
+    .service-card:first-child .thumb{
+      object-fit: cover;
+      object-position: top;
+    }
+
+
+
+
+    .thumb-overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+      display: block;
+    }
+
+
+
+
+    .cta-section { padding: 100px 0; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; text-align: center; }
+    .cta-section h2 { font-size: 3rem; margin-bottom: 1rem; }
+
+    .footer { background: #1a1a1a; color: white; padding: 3rem 0 1rem; text-align: center; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+    .footer h3 { color: #ffd700; margin-bottom: 1rem; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+    .social-links a { color: white; font-size: 1.5rem; transition: color 0.3s; }
+    .social-links a:hover { color: #ffd700; }
+
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.5rem; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .nav-links { display: none; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-bullhorn"></i> HA Media Solution</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="electrician.html">Electrician</a></li>
+        <li><a href="hvac.html">HVAC</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-three-col">
+      <div class="hero-side hero-side-left">
+        <img class="hero-side-img" src="hvac/hvac1.jpg" alt="HVAC - left" />
+      </div>
+
+      <div class="hero-center">
+        <h1><span class="hero-yellow">HVAC</span> <span class="hero-white">Pay Per Call</span></h1>
+        <div class="hero-subtext">Get <strong>Heating &amp; AC Leads</strong> | USA temp numbers | <strong>$55-160 per call</strong> | High conversion</div>
+
+        <div class="cta-buttons">
+          <a href="tel:+923127439135" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+          <a href="https://wa.me/923127439135" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="contact.html" class="btn-secondary"><i class="fas fa-file-alt"></i> Get Quote</a>
+        </div>
+      </div>
+
+      <div class="hero-side hero-side-right">
+        <img class="hero-side-img" src="hvac/hvac2.jpg" alt="HVAC - right" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">HVAC Campaign Details</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="hvac.jpg.jpg" alt="HVAC Payout" />
+            <img class="thumb thumb-overlay" src="pay out.jpeg" alt="Payout" />
+          </div>
+          <h3>Payout: $55-160 / Call</h3>
+          <p>Qualified calls only (AC repair, heating breakdown, thermostat issues)</p>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="temp-usa-number-receive-sms-logo.avif" alt="USA Temp Numbers" />
+          </div>
+          <h3>USA Temp Numbers</h3>
+          <p>Premium temp numbers provided</p>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb-box">
+            <img class="thumb" src="time duration.jpg" alt="Call Duration" />
+          </div>
+          <h3>Call Duration</h3>
+          <p>Minimum 90 seconds</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Start Your HVAC Campaign</h2>
+      <p style="font-size:1.2rem; margin-top: 0.5rem;">WhatsApp pe request karen</p>
+      <div class="cta-buttons" style="margin-top: 2rem;">
+        <a class="btn-primary" href="https://wa.me/923127439135" target="_blank"><i class="fab fa-whatsapp"></i> Get USA Temp Number</a>
+        <a class="btn-secondary" href="tel:+923127439135"><i class="fas fa-phone"></i> Call</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>          <h3>HA Media Solution</h3>
+          <p>#1 Pay Per Call Agency for Home Services</p>
+          <p>Google Ads | Facebook Ads | SEO Expert</p>
+        </div>
+        <div>
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-phone"></i> +92 312 7439135</p>
+          <p><i class="fas fa-envelope"></i> muhammadah3127472571@gmail.com</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p>Plumbing | Electrician | HVAC</p>
+          <p>Locksmith | Pest Control</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://wa.me/923127439135" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:muhammadah3127472571@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #444;">© 2024 HA Media Solution. Founded by <strong>Muhammad Ahmad</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="brand-anim-logo" aria-hidden="true"><div class="inner"><i class="fas fa-bullhorn"></i></div></div>
+  <div class="brand-watermark" aria-hidden="true"><span class="logoText">HA MEDIA SOLUTION</span></div>
+</body>
+</html>
+
+
+
